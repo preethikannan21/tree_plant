@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌳 Tree Dashboard</h2>
+
+    <center>
+        <a href="/add_tree_page"><button>Add New Tree</button></a>
+    </center>
+
+    <h3>Tree Records</h3>
+    <ul>
+    {% for t in trees %}
+        <li>
+            🌱 <b>{{t[2]}}</b> by {{t[1]}} at {{t[3]}}  
+            📈 Growth: {{t[4]}}
+            <a href="/delete/{{t[0]}}">Delete</a>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>

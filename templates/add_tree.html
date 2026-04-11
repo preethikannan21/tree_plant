@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Tree</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌿 Add Tree Record</h2>
+
+    <form action="/add_tree" method="post">
+        <input name="volunteer" placeholder="Volunteer Name" required>
+        <input name="tree_name" placeholder="Tree Name" required>
+        <input name="location" placeholder="Location" required>
+        <input name="growth" placeholder="Growth (e.g., 2ft)" required>
+        <center><button>Add Tree</button></center>
+    </form>
+</div>
+
+</body>
+</html>

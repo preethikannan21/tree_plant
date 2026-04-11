@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>🌱 Volunteer Registration</h2>
+
+    <form action="/register" method="post">
+        <input name="name" placeholder="Name" required>
+        <input name="email" placeholder="Email" required>
+        <center><button>Register</button></center>
+    </form>
+</div>
+
+</body>
+</html>
